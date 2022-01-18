@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
    <header class="header">
+       <div class="container">
        <nav class="navigation">
           <a class="logo" href="./index.html"><img src="./images/logo.svg" alt="лого сайту"></a>
           <ul class="header-list list">
@@ -23,9 +27,11 @@
        </nav>
        <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
        <button class="header-btn" type="button">онлайн-запись</button>
+    </div>
    </header> 
    <main>
        <section class="hero">
+           <div class="container">
            <ul class="hero-list list">
                <li class="hero-item"><a class="hero-link" href="">Instagram</a></li>
                <li class="hero-item"><a class="hero-link" href="">Youtube</a></li>
@@ -35,8 +41,10 @@
            <p class="hero-text">
                 Мы эксперты в модных мужских стрижках.<br>
             Работаем быстро, осторожно и со вкусом.</p>
+            </div>
        </section>
        <section class="about">
+           <div class="container">
            <ul class="about-list list">
                <li class="about-item"><img src="./images/img 1.jpg" alt="барбер бреет шею" width="270"></li>
                <li class="about-item"><img src="./images/img 2.jpg" alt="барбер делает окантовку" width="270"></li>
@@ -49,8 +57,10 @@
         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
         готовы усовершенствовать каждого, кто к нам приходит!</p>
         <button class="about-btn" type="button">онлайн-запись</button>
+        </div>
        </section>
        <section class="prices">
+           <div class="container">
            <p class="prices-pre-title pre-title">Проведи время в компании лучших мастеров</p>
            <h2 class="prices-title">Услуги и цены</h2>
            <ul class="prices-list list">
@@ -90,8 +100,10 @@
                 </li>
             </ul>
             <button class="prices-btn" type="button">онлайн-запись</button>
+            </div>
        </section>
        <section class="reasons">
+           <div class="container">
            <ul class="reasons-list list">
                <li class="reasons-item">
                    <span class="reasons-numbers">600</span>
@@ -113,29 +125,39 @@
            <p class="reasons-pre-title pre-title">старая традиционная школа</p>
            <h2 class="reasons-title">Почему приходят именно к нам?</h2>
            <p class="reasons-after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+        </div>
        </section>
        <section class="masters">
+           <div class="container">
            <p class="masters-pre-title pre-title">для настоящих ценителей атмосферы</p>
            <h2 class="masters-title">Наши мастера</h2>
            <ul class=" masters-list list">
                <li class="masters-item">
                    <img src="./images/img3.jpg" alt="мастер стрижет клиента" width="370" class="masters-item-img">
+                   <div class="masters-item-content">
                    <h3 class="masters-item-title" lang="en">John Smith</h3>
                    <p class="masters-item-text" lang="en">Extreme Barber</p>
+                    </div>
                </li>
                <li class="masters-item">
                    <img src="./images/img4.jpg" alt="мастер стрижет клиента" width="370" class="masters-item-img"-item>
+                    <div class="masters-item-content">
                    <h3 class="masters-item-title" lang="en">Michele Doe</h3>
                    <p class="masters-item-text" lang="en">Extre me Barber</p>
+                    </div>
                </li>
                <li class="masters-item">
                    <img src="./images/img5.jpg" alt="мастер стрижет клиента" width="370" class="masters-item-img">
+                    <div class="masters-item-content">
                    <h3 class="masters-item-title" lang="en">Alan Black</h3>
                    <p class="masters-item-text" lang="en">Extreme Barber</p>
+                </div>
                </li>
            </ul>
+            </div>  
        </section>
        <section class="gallery">
+           <div class="container">
            <p class="gallery-pre-title pre-title" >На латинском языке “барба” означает “борода”</p>
            <h2 class="visually-hidden">Галерея</h2>
            <ul class="gallery-list list">
@@ -144,29 +166,30 @@
                <li class="gallery-list-item"><img src="./images/img8.jpg" alt="разновидности работ барбера" width="270"></li>
                <li class="gallery-list-item"><img src="./images/img9.jpg" alt="разновидности работ барбера" width="270"></li>
            </ul>
+        </div>
        </section>
-       <section>
-           <h2>Онлайн-запись</h2>
+       <section class="work">
+           <h2 class="work-title">Онлайн-запись</h2>
        </section>
-       <section>
-           <h2>Контакты</h2>
-           <address>
-               <ul>
-                   <li><a href="https://goo.gl/maps/ZwP763EuCjDHQ6Xc8" target="blank" rel="noopener noreferrer nofollow">ул. Васильковая, 7А Киев, 08132</a></li>
-                   <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                   <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+       <section class="contacts">
+           <h2 class="contacts-title">Контакты</h2>
+           <address class="contacts-address">
+               <ul class="contacts-address-list">
+                   <li><a class="contacts-address-list-item" href="https://goo.gl/maps/ZwP763EuCjDHQ6Xc8" target="blank" rel="noopener noreferrer nofollow">ул. Васильковая, 7А Киев, 08132</a></li>
+                   <li><a class="contacts-address-list-item" href="tel:+380441111111">+38 044 111 11 11</a></li>
+                   <li><a class="contacts-address-list-item" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
                </ul>
            </address>
-           <p>время работы</p>
-           <p>Ежедневно с 9:00 до 22:00</p>
+           <p class="contacts-working">время работы</p>
+           <p class="contacts-working-time">Ежедневно с 9:00 до 22:00</p>
        </section>
       
    </main> 
-        <footer>
-            <p>&copy;Copyright 2020</p>
-            <ul>
-                <li>Instagram</li>
-                <li>Youtube</li>
+        <footer class="footer">
+            <p class="footer-symbol">&copy;Copyright 2020</p>
+            <ul class="footer-list">
+                <li class="footer-list-item">Instagram</li>
+                <li class="footer-list-item">Youtube</li>
             </ul>
            
         </footer>

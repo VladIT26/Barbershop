@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   --header-text-color: #ffffff;
   --first-btn-color: #ffffff;
@@ -7,12 +10,38 @@
   --first-text-color: #303030;
   --accent-color: #ff6c00;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 h1 {
   font-family: "Raleway", sans-serif;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -35,6 +64,8 @@ h1 {
 /* header------- */
 .header {
   background-color: gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link {
   font-weight: 600;
@@ -102,8 +133,13 @@ h1 {
 }
 
 /* ABOUT */
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
 .about-pre-title {
   color: var(--first-text-color);
+  margin-bottom: 20px;
 }
 .about-title {
   font-family: "Raleway", sans-serif;
@@ -111,18 +147,21 @@ h1 {
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .about-after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 20px;
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 40px;
 }
 .about-btn {
   font-family: inherit;
@@ -141,9 +180,12 @@ h1 {
 /* PRICES */
 .prices {
   background-color: gray;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .prices-pre-title {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 .prices-title {
   font-family: "Raleway", sans-serif;
@@ -151,6 +193,7 @@ h1 {
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--first-title-color);
+  margin-bottom: 44px;
 }
 .prices-text {
   font-size: 18px;
@@ -171,7 +214,11 @@ h1 {
 .prices-btn:focus {
   color: var(--accent-color);
 }
-
+/* Reasons */
+.reasons {
+  padding-top: 121px;
+  padding-bottom: 130px;
+}
 .reasons-numbers {
   font-weight: bold;
   font-size: 42px;
@@ -188,6 +235,7 @@ h1 {
 }
 .reasons-pre-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .reasons-title {
   font-family: "Raleway", sans-serif;
@@ -195,12 +243,19 @@ h1 {
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .reasons-after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+}
+
+/* masters */
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .masters-pre-title {
   color: var(--second-title-color);
@@ -220,6 +275,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  margin-bottom: 8px;
 }
 .masters-item-text {
   font-size: 14px;
@@ -228,6 +284,75 @@ h1 {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+.masters-item-content {
+  padding-top: 30px;
+}
+
+/* gallery */
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .gallery-pre-title {
   color: var(--second-title-color);
+}
+
+/* workk */
+.work-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+
+.contacts-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+.contacts-address-list-item {
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contacts-working {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: var(--first-title-color);
+}
+.contacts-working-time {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.footer-symbol {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer-list-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--first-text-color);
 }
