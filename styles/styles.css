@@ -19,9 +19,13 @@ h5,
 h6 {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 img {
   display: block;
@@ -50,9 +54,6 @@ h1 {
   height: 1px;
   margin: -1px;
 }
-.list {
-  list-style: none;
-}
 .pre-title {
   font-weight: 600;
   font-size: 11px;
@@ -67,6 +68,23 @@ h1 {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 73px;
+}
+.header-list {
+  display: flex;
+}
+.header-item + .header-item {
+  margin-left: 40px;
+}
 .header-link {
   font-weight: 600;
   font-size: 12px;
@@ -78,6 +96,9 @@ h1 {
 .header-link:focus {
   color: var(--accent-color);
 }
+.header-connect {
+  margin-left: auto;
+}
 .header-tel {
   font-weight: 600;
   font-size: 12px;
@@ -86,6 +107,7 @@ h1 {
   color: var(--header-text-color);
 }
 .header-btn {
+  margin-left: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -93,6 +115,11 @@ h1 {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--first-btn-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
+  min-width: 160px;
+  height: 40px;
 }
 .header-btn:hover,
 .header-btn:focus {
@@ -101,7 +128,12 @@ h1 {
 
 /* HERO */
 .hero {
-  background-color: gray;
+}
+.hero-container {
+  display: flex;
+}
+.hero-list {
+  width: 93px;
 }
 .hero-link {
   font-weight: 600;
@@ -113,6 +145,12 @@ h1 {
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
+}
+
+.hero-right {
+  background-color: gray;
+  flex-grow: 1;
+  padding: 272px 0 206px 96px;
 }
 
 .hero-pre-title {
@@ -259,7 +297,15 @@ h1 {
 }
 .masters-pre-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
+.masters-list {
+  display: flex;
+}
+.masters-item + .masters-item {
+  margin-left: 30px;
+}
+
 .masters-title {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -267,6 +313,7 @@ h1 {
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .masters-item-title {
   font-weight: 400;
