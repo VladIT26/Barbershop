@@ -127,8 +127,8 @@ h1 {
 }
 
 /* HERO */
-.hero {
-}
+/* .hero {
+} */
 .hero-container {
   display: flex;
 }
@@ -301,11 +301,17 @@ h1 {
 }
 .masters-list {
   display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
-.masters-item + .masters-item {
+/* .masters-item + .masters-item {
   margin-left: 30px;
+} */
+.masters-item {
+  width: calc(100 / 3) - 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
-
 .masters-title {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
