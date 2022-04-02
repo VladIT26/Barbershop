@@ -61,6 +61,27 @@ h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+.pre-title::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: #303030;
+}
+.pre-title-light-theme::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.6);
+  transform: rotate(90deg);
+}
+.pre-title-dark-theme::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  /* transform: rotate(90deg); */
+}
 
 /* header------- */
 .header {
@@ -124,6 +145,7 @@ h1 {
 .header-btn:hover,
 .header-btn:focus {
   color: var(--first-btn-color);
+  background-color: #ff6c00;
 }
 
 /* HERO */
@@ -133,7 +155,23 @@ h1 {
   display: flex;
 }
 .hero-list {
-  width: 93px;
+  display: flex;
+  align-items: center;
+  /* width: 93px; */
+  transform: rotate(-90deg);
+}
+.hero-list::before {
+  display: block;
+  content: "";
+  flex-shrink: 1;
+  width: 60px;
+  height: 1px;
+  background: #303030;
+  margin-right: 40px;
+  transform: rotate(0.17deg);
+}
+.hero-item + .hero-item {
+  margin-left: 40px;
 }
 .hero-link {
   font-weight: 600;
@@ -294,6 +332,7 @@ h1 {
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
+  background-color: #f7f7f7;
 }
 .masters-pre-title {
   color: var(--second-title-color);
@@ -336,9 +375,35 @@ h1 {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 .masters-item-content {
   padding-top: 30px;
+}
+.masters-socials-list {
+  display: flex;
+  justify-content: center;
+}
+.masters-socials-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #303030;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.masters-socials-link:hover,
+.masters-socials-link:focus {
+  fill: #ff6c00;
+}
+.masters-socials-item + .masters-socials-item {
+  margin-left: 10px;
+}
+.masters-socials-icon {
+  fill: currentColor;
 }
 
 /* gallery */
@@ -348,6 +413,18 @@ h1 {
 }
 .gallery-pre-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+.gallery-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.gallery-list-item {
+  width: calc(100 / 4) - 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 /* workk */
